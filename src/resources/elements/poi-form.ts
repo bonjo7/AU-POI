@@ -1,17 +1,23 @@
 import { bindable } from 'aurelia-framework';
+import {Pois} from "../../services/poi-types";
 
 export class PoiForm {
-  attractionType: string;
-  atractionName: string;
-  attractionDesc: string;
+  attractionType = '';
+  attractionName = '';
+  attractionDesc = '';
   @bindable
-  pois: any[] = [];
+  pois: Pois[] = [];
+  @bindable
+  admissionFee: string[];
+
+  selectedAdmission = '';
 
   addPoi() {
     const poi = {
       attractionType: this.attractionType,
-      attractionName: this.atractionName,
-      attractionDesc: this.attractionDesc
+      attractionName: this.attractionName,
+      attractionDesc: this.attractionDesc,
+      admissionFee: this.selectedAdmission
     }
     this.pois.push(poi)
     console.log(this.pois);

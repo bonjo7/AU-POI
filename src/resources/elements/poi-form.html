@@ -21,6 +21,14 @@
           <div class="field">
             <label>Description</label> <input type="text" value.bind="attractionDesc">
           </div>
+          <div class="grouped inline fields">
+              <div class="field" repeat.for="method of admissionFee">
+                <div class="ui radio checkbox">
+                  <input type="radio" model.bind="method" checked.bind="selectedAdmission">
+                  <label>${method}</label>
+                </div>
+              </div>
+            </div>
         <button class="ui blue submit button">Create POI</button>
       </form>
 </template>

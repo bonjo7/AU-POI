@@ -1,4 +1,7 @@
+import { Pois } from "../services/poi-types";
+
 export class Poi {
-  pois: any[] = [];
+  pois: Pois[] = [];
+  admissionFee = ['Yes', 'No', 'Voluntary']
 
 }

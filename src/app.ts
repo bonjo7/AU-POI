@@ -1,3 +1,19 @@
+import { RouterConfiguration, Router } from 'aurelia-router';
+import { PLATFORM } from 'aurelia-pal';
+
 export class App {
-  public message: string = 'Hello World!';
+  router: Router;
+
+  configureRouter(config: RouterConfiguration, router: Router) {
+    config.map([
+      {
+        route: ['', 'poi'],
+        name: 'Poi',
+        moduleId: PLATFORM.moduleName('views/poi'),
+        nav: true,
+        title: 'POI'
+      }
+    ]);
+    this.router = router;
+  }
 }

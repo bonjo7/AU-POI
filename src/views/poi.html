@@ -1,13 +1,10 @@
 <template>
-    <require from="../resources/elements/poi-list"></require>
     <require from="../resources/elements/poi-form"></require>
-  
-      <section class="ui raised segment">
+    <require from="../resources/elements/poi-list"></require>
+    <section class="ui raised segment">
+          <poi-form pois.bind="pois" admission-fee.bind="admissionFee"></poi-form>
+          </section>
+    <section class="ui raised segment">
         <poi-list pois.bind="pois"></poi-list>
         </section>
-    
-    <section class="ui raised segment">
-          <poi-form pois.bind="pois"></poi-form>
-          </section>
-      
 </template>
