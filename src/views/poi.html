@@ -1,0 +1,33 @@
+<template>
+    <require from="../resources/elements/poi-list"></require>
+  <div class="ui stackable two column grid">
+    <div class="column">
+      <form submit.trigger="addPoi()" class="ui form stacked segment">
+        <h3 class='ui dividing header'> Create a Point of Interest </h3>
+        
+          <div class="field">
+            <label>
+              Select Attraction Type:<br>
+              <select value.bind="attractionType">
+                <option value="">Choose...</option>
+                <option value="Historic">Historic</option>
+                <option value="Beach">Beach</option>
+                <option value="Woodlands">Woodlands</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Outdoor Activity">Outdoor Activity</option>
+              </select>
+            </label>
+          </div>
+          <div class="field">
+            <label>Name</label> <input type="text" value.bind="attractionName">
+          </div>
+          <div class="field">
+            <label>Description</label> <input type="text" value.bind="attractionDesc">
+          </div>
+        <button class="ui blue submit button">Create POI</button>
+      </form>
+    </div>
+      <div class="column">
+        <poi-list pois.bind="pois"></poi-list>
+      </div>
+</template>

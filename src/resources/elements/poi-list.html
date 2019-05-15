@@ -1,0 +1,21 @@
+<template>
+  <div class="column">
+    <h3 class="ui dividing header"> Poi's </h3>
+      <table class="ui celled table segment">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr repeat.for="poi of pois">
+            <td> ${poi.attractionType}</td>
+            <td> ${poi.attractionName}</td>
+            <td> ${poi.attractionDesc}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</template>
