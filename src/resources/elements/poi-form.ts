@@ -1,16 +1,21 @@
+import { inject } from 'aurelia-framework';
 import { bindable } from 'aurelia-framework';
-import {Pois} from "../../services/poi-types";
+import { Pois } from "../../services/poi-types";
+import { PoiService } from "../../services/poi-service"
 
+@inject(PoiService)
 export class PoiForm {
-  attractionType = '';
-  attractionName = '';
-  attractionDesc = '';
   @bindable
   pois: Pois[] = [];
   @bindable
   admissionFee: string[];
 
+  attractionType = '';
+  attractionName = '';
+  attractionDesc = '';
   selectedAdmission = '';
+
+  constructor (private ds: PoiService) {}
 
   addPoi() {
     const poi = {
