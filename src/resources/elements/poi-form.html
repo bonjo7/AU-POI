@@ -1,4 +1,5 @@
 <template>
+    <require from="./coordinates"></require>
     <form submit.trigger="addPoi()" class="ui form stacked segment">
         <h3 class='ui dividing header'> Create a Point of Interest </h3>
         
@@ -21,6 +22,7 @@
           <div class="field">
             <label>Description</label> <input type="text" value.bind="attractionDesc">
           </div>
+          <coordinates location.two-way="location"></coordinates>
           <div class="grouped inline fields">
               <div class="field" repeat.for="method of admissionFee">
                 <div class="ui radio checkbox">

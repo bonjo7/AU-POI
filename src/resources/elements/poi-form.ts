@@ -14,6 +14,7 @@ export class PoiForm {
   attractionName = '';
   attractionDesc = '';
   selectedAdmission = '';
+  location = { lat: 53.2734, lng: -7.7783203 };
 
   constructor (private ds: PoiService) {}
 
@@ -22,7 +23,8 @@ export class PoiForm {
       attractionType: this.attractionType,
       attractionName: this.attractionName,
       attractionDesc: this.attractionDesc,
-      admissionFee: this.selectedAdmission
+      admissionFee: this.selectedAdmission,
+      location: this.location
     }
     this.pois.push(poi)
     console.log(this.pois);
