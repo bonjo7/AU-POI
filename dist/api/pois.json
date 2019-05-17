@@ -1,0 +1,13 @@
+[
+  {"attractionType": "Mountains",
+      "attractionName": "Coumshingaun",
+      "description": "Coumshingaun Loop Walk is a moderate 4 hour (7.5 km) walking route around a natural amphitheatre of splendour and silence, the Coumshingaun Corrie Lake and the surrounding mountains in County Waterford, Ireland. Coumshingaun is one of the finest examples of a corrie or coum in Europe and the Comeragh mountains most famous landmark. Corries were formed by glacier movement during the ice age",
+      "admissionFee": "No"
+    },
+    {
+      "attractionType": "Mountains",
+      "attractionName": "Mahon Falls",
+      "description": "Mahon Falls is an 80m waterfall nestled in the Comeragh Mountains near Lemybrien, County Waterford. There is a car park close to the falls with a not too strenuous walk to get to them. The dramatic waterfall which is surrounded by breathtaking beauty makes this a trip not to be missed. Visitors can also see sheep and goats dotted along the mountainsides.",
+      "admissionFee": "No"
+    }
+  ]
