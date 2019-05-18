@@ -1,4 +1,8 @@
-# `poi-single-page`
+# `POINTS OF INTEREST SPA`
+
+##Project Spec
+
+Creating a single page application, allowing a user to create a user account, login, view points of interests and create a point of interest.
 
 This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
 
@@ -15,13 +19,3 @@ To change dev server port, do `au run --port 8888`.
 To enable Webpack Bundle Analyzer, do `au run --analyze`.
 
 To enable hot module reload, do `au run --hmr`.
-
-## Build for production
-
-Run `au build --env prod`.
-
-## Unit tests
-
-Run `au test` (or `au jest`).
-
-To run in watch mode, `au test --watch` or `au jest --watch`.
