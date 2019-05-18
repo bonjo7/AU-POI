@@ -1,6 +1,6 @@
 # `POINTS OF INTEREST SPA`
 
-##Project Spec
+## Project Spec
 
 Creating a single page application, allowing a user to create a user account, login, view points of interests and create a point of interest.
 
